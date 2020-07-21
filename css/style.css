@@ -173,12 +173,23 @@ nav {
   z-index: 99;
   animation-duration: 0.5s;
   animation-delay: 3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 ul {
   display: flex;
   align-items: center;
-  justify-content: center;
+}
+
+ul:not(:last-child)::after {
+  content: "";
+  width: 0.4em;
+  height: 0.4em;
+  border-radius: 50%;
+  background-color: #ffe400;
+  margin: 0 1.2em;
 }
 
 li {
@@ -384,7 +395,6 @@ li:hover {
   width: 1.867em;
   height: 1.867em;
   top: 0;
-  z-index: -1;
 }
 .content__header::before {
   left: 0;
@@ -407,6 +417,7 @@ li:hover {
   width: 0.6em;
   height: 0.6em;
   border-radius: 50%;
+  z-index: 1;
 }
 .content__header_left-dot {
   left: 0;
