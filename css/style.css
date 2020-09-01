@@ -199,13 +199,19 @@ li {
   font-weight: 900;
   font-size: calc(12px + (36 - 12) * (100vw - 1280px) / (3840 - 1280));
   cursor: pointer;
+  border-bottom: 1px dashed #fff;
 }
 li:hover {
   color: #ffe400;
+  border-bottom: 1px dashed transparent;
 }
 
 .position-1 {
   margin-top: 3vh;
+}
+.position-1 .active {
+  color: #ffe400;
+  border-bottom: 1px dashed transparent;
 }
 
 .container {
